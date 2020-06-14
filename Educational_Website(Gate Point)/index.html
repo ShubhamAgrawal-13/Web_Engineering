@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>GATE</title>
+		<link rel="stylesheet" href="w3.css" type="text/css">
+	</head>
+	<body>
+		<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+		  <button class="w3-bar-item w3-button w3-large"
+		  onclick="w3_close()">Close &times;</button>
+		  <a href="http://gate.iitm.ac.in/" class="w3-bar-item w3-button">GATE 2019</a>
+     	  <a href="gate/GATE_2019_Brochure.pdf" class="w3-bar-item w3-button">GATE Brochure</a>
+   		  <a href="gatepapers.html" class="w3-bar-item w3-button">GATE Previous years papers</a>
+		</div>
+		<script>
+				<!-- alert("Are you ready for something new? "); -->
+				function w3_open() {
+				  document.getElementById("main").style.marginLeft = "25%";
+				  document.getElementById("mySidebar").style.width = "25%";
+				  document.getElementById("mySidebar").style.display = "block";
+				  document.getElementById("openNav").style.display = "none";
+				}
+				function w3_close() {
+				  document.getElementById("main").style.marginLeft = "0%";
+				  document.getElementById("mySidebar").style.display = "none";
+				  document.getElementById("openNav").style.display = "inline-block";
+				}
+		</script>
+	<div id="main">
+		
+		
+		
+		<div>
+		<header class="w3-container w3-teal">
+			<div class="w3-b">
+				<button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+			</div>
+	
+			<img src="logo.jpg" width="120" height="90">
+			<font size="300" style="font-style:verdana;" >GATE POINT</font>
+			
+			<a href="registration_form.html"><button class="w3-button w3-blue w3-hover-pale-blue w3-right">Register</button> </a>
+			<label class="w3-container w3-text-white w3-right w3-large">New User</label>
+			<br/>	
+			<div class="w3-bar-item w3-right">
+				
+				Username:
+				<input type="text" placeholder="Username"/>
+				Password:
+				<input type="password" placeholder="Password"/>
+				<button class="w3-button w3-blue w3-hover-pale-blue">Login</button>
+				<br/>
+				<a href="#" class="w3-text-black">Forgot Password ? </a>
+		
+			</div>	
+		</header>
+		<div class="w3-bar w3-blue">
+			<div class="w3-dropdown-hover">
+   				 <button class="w3-button w3-blue w3-hover-pale-blue">HOME</button>
+   				 <div class="w3-dropdown-content w3-bar-block w3-border">
+    		 	 	<a href="http://gate.iitm.ac.in/" class="w3-bar-item w3-button">GATE 2019</a>
+     		  		<a href="gate/GATE_2019_Brochure.pdf" class="w3-bar-item w3-button">GATE Brochure</a>
+     	   	 		 <a href="gatepapers.html" class="w3-bar-item w3-button">GATE Previous years papers</a>
+    		 	</div>
+  			</div>
+			<div class="w3-bar-item w3-hover-pale-blue">Discover</div>
+			<div class="w3-dropdown-hover">
+   				 <button class="w3-button w3-blue w3-hover-pale-blue">Courses</button>
+   				 <div class="w3-dropdown-content w3-bar-block w3-border">
+    		 	 	<a href="#" class="w3-bar-item w3-button">Computer Science</a>
+     		  		<a href="#" class="w3-bar-item w3-button">Electronics</a>
+     	   	 		<a href="#" class="w3-bar-item w3-button">Information Technology</a>
+					<a href="#" class="w3-bar-item w3-button">Mechanical</a>
+					<a href="#" class="w3-bar-item w3-button">Electrical</a>
+					<a href="#" class="w3-bar-item w3-button">Instrumentation</a>
+    		 	</div>
+  			</div>
+			<div class="w3-bar-item w3-hover-pale-blue">About Us</div>
+			<div class="w3-bar-item w3-hover-pale-blue">Contact</div>
+			<div class="w3-bar-item w3-green w3-hover-pale-blue w3-right">Go</div>
+			<div class="w3-bar-item w3-hover-pale-blue w3-right"><input type="text" placeholder="Search.."/></div>
+			
+		</div>
+		</div>
+
+		<a href="http://www.iitg.ac.in/"><div class="w3-row-padding w3-margin-top">
+		  <div class="w3-third">
+			<div class="w3-card">
+			  <img src="iitg.jpg" style="width:100%" width="300" height="200" class="w3-hover-sepia">
+			  <div class="w3-container">
+				<h5>IIT Guwahati</h5>
+			  </div>
+			</div>
+		  </div></a>
+
+		  <a href="http://www.iitb.ac.in/"><div class="w3-third">
+			<div class="w3-card">
+			  <img src="iitm.jpg" style="width:100%" width="300" height="200" class="w3-hover-sepia">
+			  <div class="w3-container">
+				<h5>IIT Mumbai</h5>
+			  </div>
+			</div>
+		  </div></a>
+
+		  <a href="http://www.iitr.ac.in/"><div class="w3-third">
+			<div class="w3-card">
+			  <img src="iitr.jpg" style="width:100%" width="300" height="200" class="w3-hover-sepia">
+			  <div class="w3-container">
+				<h5>IIT Roorkee</h5>
+			  </div>
+			</div>
+		  </div>
+		</div></a>
+
+		<a href="http://www.iitk.ac.in/"><div class="w3-row-padding w3-margin-top">
+		  <div class="w3-third">
+			<div class="w3-card">
+			  <img src="iitka.jpg" style="width:100%" width="300" height="200" class="w3-hover-sepia">
+			  <div class="w3-container">
+				<h5>IIT kanpur</h5>
+			  </div>
+			</div>
+		  </div></a>
+
+		  <a href="http://www.iitd.ac.in/"><div class="w3-third">
+			<div class="w3-card">
+			  <img src="iitd.jpg" style="width:100%" width="300" height="200" class="w3-hover-sepia">
+			  <div class="w3-container">
+				<h5>IIT Delhi</h5>
+			  </div>
+			</div>
+		  </div></a>
+
+		 <a href="http://www.iisc.ac.in/"> <div class="w3-third">
+			<div class="w3-card">
+			  <img src="iisc.jpg" style="width:100%" width="300" height="200" class="w3-hover-sepia">
+			  <div class="w3-container">
+				<h5>IISc Bangalore</h5>
+			  </div>
+			</div>
+		  </div></a>
+		  </div>
+		  <br/>
+		  <div class="w3-black" align="center">
+				Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+		  </div>
+		 </div>
+	</body>
+</html>

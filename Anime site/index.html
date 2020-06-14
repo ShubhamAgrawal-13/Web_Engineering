@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="w3.css" />
+  <meta name="Description" content="">
+  <title>Anime</title>
+ </head>
+ <body>
+	
+	<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+</div>
+
+<div id="main">
+
+<div class="w3-b">
+  <button id="openNav" class="w3-button w3-black w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <h1 class="w3-container w3-black">Anime</h1>
+</div>
+
+
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+	<div class="w3-bar w3-green">
+		
+		<a href="#" class="w3-bar-item w3-hover-pale-green">Home</a>
+		<div class="w3-dropdown-hover">
+			<button class="w3-button">Anime List</button>
+			 <div class="w3-dropdown-content w3-bar-block w3-border">
+				<a href="#" class="w3-bar-item w3-button">Dragon Ball Z</a>
+				<a href="#" class="w3-bar-item w3-button">Attack on Titan</a>
+				<a href="#" class="w3-bar-item w3-button">Detective Conan</a>
+				<a href="#" class="w3-bar-item w3-button">Naruto</a>
+				<a href="#" class="w3-bar-item w3-button">Pokemon</a>
+			 </div>
+		</div>
+	    <div class="w3-dropdown-hover">
+			<button class="w3-button">Movies</button>
+			 <div class="w3-dropdown-content w3-bar-block w3-border">
+				<a href="#" class="w3-bar-item w3-button">Dragon Ball Z - Battle of gods</a>
+				<a href="#" class="w3-bar-item w3-button">Kimi no nawa</a>
+				<a href="#" class="w3-bar-item w3-button">Detective Conan - Zero's Encounter</a>
+				<a href="#" class="w3-bar-item w3-button">A silent voice</a>
+				<a href="#" class="w3-bar-item w3-button">Pokemon Movie - I choose you</a>
+			 </div>
+		</div>
+		<a href="#" class="w3-bar-item w3-hover-pale-green">favourites</a>
+		<a href="#" class="w3-bar-item w3-hover-pale-green">About Us</a>
+		<a href="#" class="w3-bar-item w3-hover-pale-green">Contact</a>
+		<button class="w3-button w3-right w3-bar-item w3-hover-gray w3-green">search</button>
+		<input class="w3-bar-item w3-right w3-border" type="text" name="search" placeholder="Search..." />
+		
+	</div>
+	
+	<div class="w3-row-padding w3-margin-top">
+			<div class="w3-third">
+				 <div class="w3-card">
+					<img class="w3-round w3-hover-grayscale" src="dc.jpg" style="width:100%">
+					<div class="w3-container">
+					<h5>Detective Conan</h5>
+					</div>
+				</div>
+			</div>
+
+		   <div class="w3-third">
+				<div class="w3-card">
+					<img class="w3-round w3-hover-grayscale" src="aot.jpg" style="width:100%">
+					 <div class="w3-container">
+					<h5>Attack on titan</h5>
+					 </div>
+			 </div>
+			</div>
+
+			  <div class="w3-third">
+				<div class="w3-card">
+				  <img class="w3-round w3-hover-grayscale" src="dbs.jpg" style="width:100%">
+				  <div class="w3-container">
+					<h5>Dragon Ball Super</h5>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+			  <div class="w3-third">
+				<div class="w3-card">
+				  <img class="w3-round w3-hover-grayscale" src="naruto.jpg" style="width:100%">
+				  <div class="w3-container">
+					<h5>Naruto</h5>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="w3-third">
+				<div class="w3-card">
+				  <img class="w3-round w3-hover-grayscale" src="yn.jpg" style="width:100%">
+				  <div class="w3-container">
+					<h5>kimi no nawa</h5>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="w3-third">
+				<div class="w3-card">
+				  <img class="w3-round w3-hover-grayscale" src="sv.jpg" style="width:100%">
+				  <div class="w3-container">
+					<h5>A silent Voice</h5>
+				  </div>
+				</div>
+			  </div>
+	</div>
+
+	
+	<div>
+	<!--&#9776-->
+	</div>
+	<div>
+	</div>
+	<div>
+	</div>
+	<div>
+	</div>
+	<div>
+	</div>
+	<div>
+	</div>
+	<div class="w3-container w3-black">
+		Copyrights
+	</div>
+ </body>
+</html>

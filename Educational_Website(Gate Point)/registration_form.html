@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Registration Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            
+            var check = function()
+            {
+                if (document.getElementById('password').value == document.getElementById('confirm_password').value) 
+                {
+                    document.getElementById('message').style.color = 'green';
+                    document.getElementById('message').innerHTML = 'matching';
+                    document.getElementById('submit').disabled = false;
+                } 
+                else 
+                {
+                    document.getElementById('message').style.color = 'red';
+                    document.getElementById('message').innerHTML = 'not matching';
+                    document.getElementById('submit').disabled = true;
+                }
+            }
+        </script>
+    </head>
+    <body bgcolor="#888888f">
+        <h1><b>Registration Form :</b></h1>
+        <br/>
+        <div>
+         <form action="Registration" method="post">
+          <table>
+            <tr>
+                <td><Strong>First Name:</strong></td>
+                <td><input type="text" name="firstname" placeholder="Enter First Name Here" required /></td>
+            </tr>
+            <tr>
+                <td><Strong>Last Name:</strong></td>
+                <td><input type="text" name="lastname" placeholder="Enter Last Name Here" required/></td>
+            </tr>
+            <tr>
+                <td><Strong>D.O.B:</strong></td>
+                <td><input type="date" name="date"  required/></td>
+            </tr>
+            <tr>
+                <td><Strong>Email id:</strong></td>
+                <td><input type="email" name="email" placeholder="Enter email Here" required/></td>
+            </tr>
+            <tr>
+                <td><Strong>Sex:</strong></td>
+                <td>
+                    <input type="radio" name="gender" value="male" checked/><b>Male</b>
+                    <input type="radio" name="gender" value="female" /><b>Female</b>
+                    <input type="radio" name="gender" value="other" /><b>Other</b>
+                </td>
+            </tr>
+            <tr>
+                <td><Strong>Password:</strong></td>
+                <td><input type="password" name="password" id="password" placeholder="Enter Password Here" onkeyup="check();" required/></td>
+            </tr>
+            <tr>
+                <td><Strong>Confirm Password:</strong></td>
+                <td><input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password Here" onkeyup="check();" /></td>
+            </tr>
+            <tr>
+                <td><span id='message'></span></td>
+            </tr>
+            
+            <tr>
+                <td><input type="reset" value="Reset" /></td>
+                <td><input type="submit" id="submit" value="Submit" /></td>
+            </tr>
+          </table>
+         </form>
+        </div>
+    </body>
+</html>

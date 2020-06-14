@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css" />
+<body>
+
+<div class="w3-container w3-teal">
+  <h1>Naruto</h1>
+</div>
+<div class="w3-container">
+  <h2>Dropdown Button</h2>
+  <p>Move the mouse over the button to open the dropdown content.</p>
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-black">Hover Over Me!</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container">
+  <h2>Clickable Dropdown</h2>
+  <p>Click on the button to open the dropdown menu.</p>
+  <div class="w3-dropdown-click">
+    <button onclick="myFunction()" class="w3-button w3-black">Click Me!</button>
+    <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("Demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+ <div class="w3-dropdown-hover">
+  <img class="w3-hover-grayscale" src="mss.png" alt="Car" width=320 height=320 />
+  <div class="w3-dropdown-content" style="width:300px">
+    <img class="w3-hover-grayscale" src="mss.png" alt="Car" width=640 height=640 />
+  </div>
+</div> 
+
+<div >
+<p class="w3-container w3-spin"><font size="64px">.</font></p>
+</div>
+
+<div class="w3-container">
+  <p>Naruto - The seventh Hokage , Eternal Mangekyou Sharingan of Uchiha Shisui and Uchiha Itachi</p>
+</div>
+
+ <div class="w3-container w3-orange w3-hover-yellow  w3-hover-text-blue">
+  <h2>Sasuke</h2>
+  <p>The one who possesses both Mangekyou Sharingan and Reinngan</p>
+</div> 
+<div class="w3-container w3-teal">
+  <p>My footer information</p>
+</div>
+
+</body>
+</html> 
